@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as *;
+
+.search-container {
+  position: relative;
+  max-width: 1120px;
+  margin: 32px auto 28px auto;
+  width: 100%;
+}
+
+.search-input {
+  padding: 12px 40px 12px 18px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 640px) {
+  .search-container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 16px;
+  }
+  .search-icon {
+    right: 26px;
+  }
+}

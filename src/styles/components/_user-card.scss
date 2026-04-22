@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as *;
+
+.user-card {
+  width: $card-width;
+  height: $card-height;
+  background: $card-bg;
+  border-radius: $border-radius;
+  padding: $card-padding;
+  box-shadow: $card-shadow;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $card-hover-shadow;
+    border-color: #e6e6ff;
+  }
+
+  h3 {
+    font-family: $proxima-font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $color-dark;
+    margin: 0 0 $card-gap-title 0;
+    text-align: left;
+  }
+
+  p {
+    font-family: $proxima-font;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    color: $color-gray;
+    margin: 0 0 $card-gap-fields 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .user-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+}

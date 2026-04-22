@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .user-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .user-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
