@@ -1,16 +1,9 @@
-# React + Vite
+## Тестовое задание. Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+&emsp; Приложение должно быть написано на React.
 
-Currently, two official plugins are available:
+&emsp; Сверстать по макету отчет. В отчете вывести список юзеров.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+&emsp; На странице есть поиск по юзерам. При вводе в строке поиска список фильтруется.  При клике по карточке выводить в pop-up дополнительную информацию по юзеру. При нажатии вне окна с информацией или крестик окно закрывается.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+&emsp; Список юзеров получаем с бэкенда. Для этого нужно установить  и запустить локально сервер. Для получения всего списка отправляем запрос без параметров, для получения совпадений ФИО со строкой ввода добавляем параметры query (term), например [http://localhost:3000?term=fer](http://127.0.0.1:3000?term=fer). То есть поиск должен быть реализован через бекенд.
